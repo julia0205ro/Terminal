@@ -1,0 +1,20 @@
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir terminal 
+3) Зайти в папку - cd terminal 
+4) Создать 3 папки - mkdir big_cat small_cat red_cat
+5) Зайти в любоую папку - cd red_cat
+6) Создать 5 файлов (3 txt, 2 json) - touch belly.txt ear.txt nose.txt paw.json tail.json
+7) Создать 3 папки - mkdir eating fun sleep
+8. Вывести список содержимого папки (в том числе скрытые файлы) - ls -la 
+9) + Открыть любой txt файл - nano belly.txt
+10) + написать туда что-нибудь, любой текст. - The red cat has a soft belly. 
+11) + сохранить и выйти. - Ctrl+O, Enter, Ctrl+X
+12) Выйти из папки на уровень выше - cd ../
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. - mv red_cat/belly.txt big_cat/ & mv red_cat/ear.txt big_cat/
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. - cp big_cat/belly.txt red_cat/ & cp big_cat/ear.txt red_cat/
+15) Найти файл по имени - find red_cat/ -tipe f -name "belly.*"
+16) просмотреть содержимое в реальном времени (команда grep) - gper "belly" red_cat/belly.txt
+17) вывести несколько первых строк из текстового файла - head -n 5 red_cat/belly.txt
+18) вывести несколько последних строк из текстового файла - tail -n 5 red_cat/belly.txt
+19) просмотреть содержимое длинного файла (команда less). - less red_cat/belly.txt
+20) вывести дату и время - date 
