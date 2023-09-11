@@ -5,7 +5,7 @@
 5) Зайти в любоую папку - cd red_cat
 6) Создать 5 файлов (3 txt, 2 json) - touch belly.txt ear.txt nose.txt paw.json tail.json
 7) Создать 3 папки - mkdir eating fun sleep
-8. Вывести список содержимого папки (в том числе скрытые файлы) - ls -la 
+8) Вывести список содержимого папки (в том числе скрытые файлы) - ls -la 
 9) + Открыть любой txt файл - nano belly.txt
 10) + написать туда что-нибудь, любой текст. - The red cat has a soft belly. 
 11) + сохранить и выйти. - Ctrl+O, Enter, Ctrl+X
