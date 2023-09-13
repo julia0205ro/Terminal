@@ -21,3 +21,41 @@ http://162.55.220.72:5006/terminal-hw-request
   "(Yulia)", 
   "(27)"
 ]
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13, а именно: 
+3) Зайти в папку
+4) Создать 3 папки
+5) Зайти в любоую папку
+6) Создать 5 файлов (3 txt, 2 json)
+7) Создать 3 папки
+8) Вывести список содержимого папки
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+
+Решение:
+Ввести в командную строку: 
+nano bash_script.sh
+Ввести в текстовом редакторе:
+#!/bin/bash
+
+cd small_cat/
+mkdir one_cat two_cats three_cats
+cd one_cat/
+touch first_paw.txt second_paw.txt third_paw.txt fourth_paw.json belly.json
+mkdir dog mouse fish
+ls -ls
+mv fourth_paw.json belly.json ../two_cats
+
+Сохранить и выйти: Ctrl+O, Enter, Ctrl+X
+
+Ввести в комендную строку: bash bash_script.sh
+
+Вывод: 
+total 12
+0 -rw-rw-r-- 1 yulia yulia    0 Sep 13 20:11 belly.json
+4 drwxrwxr-x 2 yulia yulia 4096 Sep 13 20:11 dog
+0 -rw-rw-r-- 1 yulia yulia    0 Sep 13 20:11 first_paw.txt
+4 drwxrwxr-x 2 yulia yulia 4096 Sep 13 20:11 fish
+0 -rw-rw-r-- 1 yulia yulia    0 Sep 13 20:11 fourth_paw.json
+4 drwxrwxr-x 2 yulia yulia 4096 Sep 13 20:11 mouse
+0 -rw-rw-r-- 1 yulia yulia    0 Sep 13 20:11 second_paw.txt
+0 -rw-rw-r-- 1 yulia yulia    0 Sep 13 20:11 third_paw.txt
